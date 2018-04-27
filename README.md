@@ -3,8 +3,37 @@
 [![Gem Downloads](https://img.shields.io/gem/dt/crowdai_admin.svg)](https://rubygems.org/gems/crowdai_admin)
 [![Dependency Status](https://gemnasium.com/badges/github.com/cle61/crowdai_admin.svg)](https://gemnasium.com/github.com/cle61/crowdai_admin)
 
-Simple theme for ActiveAdmin for [crowdAI](https://www.crowdai.org). Forked from [ArcticAdmin](https://github.com/cle61/crowdai_admin)
+### Credits
 
+Simple theme for ActiveAdmin for [crowdAI](https://www.crowdai.org), developed by [Sean F. Carroll](https://github.com/seanfcarroll).
+
+Inspiration and code was taken from the following projects
+
+* [ArcticAdmin](https://github.com/cle61/crowdai_admin)
+* [ActiveAdmin Addons](https://github.com/platanus/activeadmin_addons)
+* [ActiveAdmin SimpleForm](https://github.com/blocknotes/activeadmin_simple_form)
+
+### Features
+
+#### General
+
+* Updated styling based on [crowdAI](https://www.crowdai.org/) and easily themed
+* No JS dependencies
+* Explicit Admin action generator
+
+#### Index view
+
+* Toggle booleans from index view
+
+#### Forms
+
+* SimpleForm for ActiveAdmin forms (via [])
+
+
+#### Gems
+
+* [activeadmin_simple_form](https://github.com/blocknotes/activeadmin_simple_form)
+* [activeadmin_select_many](https://github.com/blocknotes/activeadmin_select_many)
 
 
 ![Screenshot](doc/index.png)
@@ -31,36 +60,17 @@ config.meta_tags_for_logged_out_pages = meta_tags_options
 
 ### CSS
 
+Remove the `active_admin.css`, and instead add this to your `application.scss`
+
 In your `active_admin.css`, include the css file:
 
 ```css
-/*
- *= require arctic_admin/base
- */
+@import "crowdai_admin/base";
 ```
 
 **Remove the line `*= require active_admin/base`**
 
-Then restart your webserver if it was previously running.
-
-### Sass Support
-
-![Remove the line @import "active_admin/base"](http://messages.hellobits.com/warning.svg?message=Remove%20the%20line%20%40import%20%22active_admin%2Fbase%22)
-
-If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
-`active_admin.css.scss` file:
-
-```scss
-@import "arctic_admin/base";
-```
-
-If you use the
-[Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html),
-add this to your `active_admin.css.sass` file:
-
-```sass
-@import arctic_admin/base
-```
+Then restart your webserver if it was previously running.s
 
 ### JS
 
@@ -72,32 +82,8 @@ In your `active_admin.js`, include the js file:
 
 **Remove the line `//= require active_admin/base`**
 
-### Customization
 
-For this, you need to use sass to custom the theme.
 
-You can even change basic color of the theme by placing some other variables:
-
-If you use the [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
-`active_admin.css.scss` file:
-
-```scss
-$primary-color: #2dbb43;
-
-@import "arctic_admin/base";
-```
-
-If you use the
-[Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html),
-add this to your `active_admin.css.sass` file:
-
-```sass
-$primary-color: #2dbb43
-
-@import arctic_admin/base
-```
-
-Then restart your webserver if it was previously running.
 
 ## Contributing
 
