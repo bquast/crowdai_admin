@@ -18,16 +18,6 @@ Inspiration and code was taken from the following projects
 #### General
 
 * Updated styling based on [crowdAI](https://www.crowdai.org/) and easily themed
-* No JS dependencies
-* Explicit Admin action generator
-
-#### Index view
-
-* Toggle booleans from index view
-
-#### Forms
-
-* SimpleForm for ActiveAdmin forms (via [])
 
 
 #### Gems
@@ -36,7 +26,9 @@ Inspiration and code was taken from the following projects
 * [activeadmin_select_many](https://github.com/blocknotes/activeadmin_select_many)
 
 
-![Screenshot](doc/index.png)
+![Dashboard](doc/dashboard.png)
+![Index](doc/articles.png)
+
 
 ## Installation
 
@@ -83,11 +75,9 @@ In your `active_admin.js`, include the js file:
 **Remove the line `//= require active_admin/base`**
 
 
-
-
 ## Contributing
 
-1. Fork it ( https://github.com/cle61/arctic_admin/fork )
+1. Fork it ( https://github.com/crowdAI/crowdai_admin/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
