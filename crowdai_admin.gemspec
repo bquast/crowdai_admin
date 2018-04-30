@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.name        = 'crowdai_admin'
   s.version     = CrowdaiAdmin::VERSION
   s.summary     = "crowdAI Admin theme for ActiveAdmin"
-  s.description = "A responsive theme for Active Admin. Based on ArticAdmin by Clément Prod'homme"
+  s.description = "A responsive theme for Active Admin with a crowdAI flair"
   s.authors     = ["Sean F. Carroll"]
-  s.files       = Dir["{app,lib}/**/*"] + ["Readme.md", 'LICENCE.txt']
+  s.files       = Dir["{app,lib,doc}/**/*"] + ["Readme.md", 'LICENCE.txt']
   s.homepage    = 'https://github.com/crowdai/crowdai_admin'
   s.license     = 'MIT'
   s.require_paths = ["lib"]
