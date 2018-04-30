@@ -17,7 +17,7 @@
 @mixin primary-button($background-color, $color) {
   background-color: $background-color;
   color: $color;
-  border: none; 
+  border: none;
   @include button();
 
   &:hover {
@@ -25,7 +25,7 @@
   }
 
   &:active, &:focus {
-    background-color: darken($background-color, 10%); 
+    background-color: darken($background-color, 10%);
   }
 
   &:disabled {
@@ -62,7 +62,7 @@
   }
 
   &:active, &:focus {
-    background-color: darken($color, 10%); 
+    background-color: darken($color, 10%);
     color: #fff;
   }
 
